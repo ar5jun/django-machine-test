@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Rating Details</title>
+</head>
+<body>
+
+<h1>Book Rating Details</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Rating</th>
+        <th>Comment</th>
+        <th>Author ID</th>
+        <th>Book ID</th>
+    </tr>
+    <tbody>
+        {% for data in authors_data %}
+            <tr>
+                <td>{{ data.id }}</td>
+                <td>{{ data.rating }}</td>
+                <td>{{ data.comment }}</td>
+                <td>{{ data.author }}</td>
+                <td>{{ data.book }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+</body>
+</html>

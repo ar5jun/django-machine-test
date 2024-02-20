@@ -1,0 +1,29 @@
+<!-- myapp/templates/myapp/authors_table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authors Table</title>
+</head>
+<body>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Total Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for author in authors_data %}
+            <tr>
+                <td>{{ author.id }}</td>
+                <td>{{ author.name }}</td>
+                <td>{{ author.total_rating }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
